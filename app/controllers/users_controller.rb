@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def index
     @user = User.ApplicationController
-    user.id = current_user.id
+    @users = User.all
   end
 
   def edit
@@ -14,6 +14,10 @@ class UsersController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def show
+    @user = User.find(params[:id])
   end
 
   private
