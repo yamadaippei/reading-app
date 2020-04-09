@@ -77,6 +77,5 @@ gem 'mini_magick'
 
 gem 'ransack'
 
-gem 'bootstrap'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
