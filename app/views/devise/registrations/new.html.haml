@@ -34,5 +34,12 @@
               = f.label :image, class: 'user-image-icon' do
                 .image-choose-icon アイコンの登録
                 = f.file_field :image, class: 'hidden'
+          .field
+            .field-label
+              = f.label :introduce
+            .field-input
+              = f.text_field :introduce, placeholder:"自己紹介を書いてください"
+
+
           .actions
             = f.submit "アカウント作成", class: 'btn'
